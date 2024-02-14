@@ -58,7 +58,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#eff6ff] pt-72 py-10 w-full">
-      <div className="2xl:max-w-[1400px] mx-auto px-5 md:px-10 lg:px-36">
+      <div className="2xl:max-w-[1400px] mx-auto px-5 md:px-10 lg:px-20">
         <div className="md:grid grid-cols-9 w-full gap-10">
           <div className="col-span-3 flex flex-col items-start space-y-5 w-full">
             <div className="text-xl font-extrabold text-orange-500">

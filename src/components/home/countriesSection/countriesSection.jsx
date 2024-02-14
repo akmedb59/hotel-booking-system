@@ -11,7 +11,7 @@ const CountriesSection = () => {
         <SectionHeader title="Explore By Countries" />
         <DescriptionText text="Explore our top destination voted by more than 1000 000+ customers around the world" />
       </div>
-      <div className="px-5 md:px-10 lg:px-36">
+      <div className="px-5 md:px-10 lg:px-20">
         <CountriesGrid />
         <div className="mx-auto w-fit py-3">
           <Button>

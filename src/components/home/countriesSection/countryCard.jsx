@@ -2,7 +2,7 @@ import React from 'react'
 
 const CountryCard = ({name}) => {
   return (
-    <div className={"h-full min-h-48"}>
+    <div className={"h-full min-h-64"}>
       <div
         style={{
           backgroundImage: "url('/heroBg.jpg')",
