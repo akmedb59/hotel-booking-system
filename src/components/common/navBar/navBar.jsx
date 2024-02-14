@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import NavLinkList from "./navLinkList";
+import ButtonLight from "../buttonLight";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const onClick = () => {
@@ -31,9 +32,9 @@ const NavBar = () => {
       )}
 
       <div className="flex items-center gap-5">
-        <div className="border px-5 py-2 rounded text-orange-400 border-orange-400 hover:bg-orange-100 cursor-pointer">
-          Contact Us
-        </div>
+        {/* <div className="border px-5 py-2 rounded text-orange-400 border-orange-400 hover:bg-orange-100 cursor-pointer"> */}
+        <ButtonLight>Contact Us</ButtonLight>
+        {/* </div> */}
         <div className="md:hidden cursor-pointer" onClick={onClick}>
           <FaBars />
         </div>

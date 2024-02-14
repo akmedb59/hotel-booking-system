@@ -2,6 +2,7 @@ import HeroSection from "@/components/home/heroSection/heroSection";
 import NavBar from "@/components/common/navBar/navBar";
 import TopHotelsSection from "@/components/home/topHotelsSection/topHotelsSection";
 import FeatureSection from "@/components/home/featureSection/featureSection";
+import StatsSection from "@/components/home/statsSection/statsSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="py-40 space-y-10">
         <TopHotelsSection />
         <FeatureSection />
+        <StatsSection />
       </div>
     </div>
   );
