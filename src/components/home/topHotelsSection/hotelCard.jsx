@@ -1,12 +1,12 @@
 import React from "react";
 import { FaStar } from "react-icons/fa6";
-const HotelCard = ({ name, rating, price, index }) => {
+const HotelCard = ({ name, rating, price, index, img }) => {
   const isEven = index % 2 === 0;
   return (
     <div className={isEven ? "h-72" : "h-96"}>
       <div
         style={{
-          backgroundImage: "url('/heroBg.jpg')",
+          backgroundImage: img,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

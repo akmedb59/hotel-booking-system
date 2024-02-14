@@ -1,11 +1,11 @@
 import React from 'react'
 
-const CountryCard = ({name}) => {
+const CountryCard = ({ name, img = "url('/heroBg.jpg')" }) => {
   return (
     <div className={"h-full min-h-64"}>
       <div
         style={{
-          backgroundImage: "url('/heroBg.jpg')",
+          backgroundImage: img,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -21,6 +21,6 @@ const CountryCard = ({name}) => {
       </div>
     </div>
   );
-}
+};
 
 export default CountryCard

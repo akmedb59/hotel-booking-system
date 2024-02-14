@@ -5,25 +5,25 @@ const StatsSecImg = () => {
     <div>
       <div className="flex relative">
         <Image
-          src={"/heroBg.jpg"}
+          src={"/destinations (1).jpg"}
           width={150}
           height={150}
           className="rounded-md object-cover overflow-hidden aspect-square rotate-12 w-40 h-40"
         />
         <Image
-          src={"/heroBg.jpg"}
+          src={"/destinations (2).jpg"}
           width={100}
           height={100}
           className="rounded-md object-cover overflow-hidden aspect-square -rotate-12 w-32 h-32 mb-20 -ml-5"
         />
         <Image
-          src={"/heroBg.jpg"}
+          src={"/destinations (3).jpg"}
           width={100}
           height={100}
           className="rounded-md object-cover overflow-hidden aspect-square  w-24 h-24 mt-10 z-10"
         />
         <Image
-          src={"/heroBg.jpg"}
+          src={"/destinations (4).jpg"}
           width={100}
           height={100}
           className="rounded-md object-cover overflow-hidden aspect-square rotate-45 w-32 h-32 "

@@ -27,51 +27,61 @@ const HotelsCarousel = () => {
       name: "Hotel 1 Ibezza Point Suites Hotel",
       rating: 4,
       price: 100,
+      img: "url('/hotel (1).jpg')",
     },
     {
       name: "Hotel 2",
       rating: 4,
       price: 100,
+      img: "url('/hotel (2).jpg')",
     },
     {
       name: "Hotel 12",
       rating: 4,
       price: 100,
+      img: "url('/hotel (3).jpg')",
     },
     {
       name: "Hotel 3",
       rating: 5,
       price: 100,
+      img: "url('/hotel (4).jpg')",
     },
     {
       name: "Hotel 4",
       rating: 4,
       price: 100,
+      img: "url('/hotel (5).jpg')",
     },
     {
       name: "Hotel 5",
       rating: 4,
       price: 100,
+      img: "url('/hotel (6).jpg')",
     },
     {
       name: "Hotel 6",
       rating: 5,
       price: 100,
+      img: "url('/hotel (7).jpg')",
     },
     {
       name: "Hotel 7",
       rating: 4,
       price: 100,
+      img: "url('/hotel (8).jpg')",
     },
     {
       name: "Hotel 8",
       rating: 5,
       price: 100,
+      img: "url('/hotel (9).jpg')",
     },
     {
       name: "Hotel 9",
       rating: 5,
       price: 100,
+      img: "url('/hotel (10).jpg')",
     },
   ];
   return (
@@ -93,6 +103,7 @@ const HotelsCarousel = () => {
             rating={item.rating}
             price={item.price}
             index={index}
+            img={item.img}
           />
         ))}
       </Carousel>
