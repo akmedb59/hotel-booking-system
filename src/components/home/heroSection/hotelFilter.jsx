@@ -1,8 +1,8 @@
 "use client";
 import React, { Children } from "react";
-import Selection from "../common/selection";
-import Date from "../common/date";
-import Button from "../common/button";
+import Selection from "../../common/selection";
+import Date from "../../common/date";
+import Button from "../../common/button";
 
 const HotelFilter = () => {
   return (

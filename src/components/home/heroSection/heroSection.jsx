@@ -1,6 +1,6 @@
 import React from "react";
 import HotelFilter from "./hotelFilter";
-import Button from "../common/button";
+import Button from "../../common/button";
 
 const HeroSection = () => {
   return (
