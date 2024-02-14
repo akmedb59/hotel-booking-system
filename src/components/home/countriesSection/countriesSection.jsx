@@ -6,7 +6,7 @@ import Button from "@/components/common/button";
 import { FaAngleRight } from "react-icons/fa";
 const CountriesSection = () => {
   return (
-    <div className="min-h-screen">
+    <div className="">
       <div className="space-y-5 py-5 w-full text-center">
         <SectionHeader title="Explore By Countries" />
         <DescriptionText text="Explore our top destination voted by more than 1000 000+ customers around the world" />
