@@ -6,19 +6,23 @@ import StatsSection from "@/components/home/statsSection/statsSection";
 import CountriesSection from "@/components/home/countriesSection/countriesSection";
 import Footer from "@/components/common/footer/footer";
 import Faq from "@/components/home/faq/faq";
+import InstantDiscountCard from "@/components/home/discount/instantDiscountCard";
+import ClientReview from "@/components/home/clientReview/clientReview";
 
 export default function Home() {
   return (
     <div className="relative p-0 m-0">
       <NavBar />
       <HeroSection />
-      <div className="py-40 space-y-32">
+      <div className="pt-40 space-y-32">
         <TopHotelsSection />
         <FeatureSection />
         <StatsSection />
         <CountriesSection />
+        <ClientReview />
         <Faq />
       </div>
+      <InstantDiscountCard />
       <Footer />
     </div>
   );

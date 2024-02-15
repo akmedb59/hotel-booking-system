@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import FaqAccordian from "./faqAccordian";
 import SectionHeader from "../sectionHeader";
+import Button from "@/components/common/button";
 const tempQuestions = [
   {
     id: 1,
@@ -63,23 +63,17 @@ const tempQuestions = [
 ];
 const Faq = () => {
   return (
-    <div className="px-5 md:px-10 lg:px-36">
-      <Head>
-        <title>SnipByte FAQ - Frequently Asked Questions</title>
-        <meta
-          name="description"
-          content="Find answers to frequently asked questions about SnipByte, coding templates, and our services. Get the information you need to enhance your coding experience."
-        />
-        <meta
-          name="keywords"
-          content="SnipByte, FAQ, frequently asked questions, coding templates, coding services, coding experience"
-        />
-        {/* Add more meta tags as needed */}
-      </Head>
-      <div className="text-center">
+    <div className="px-5 md:px-10 lg:px-20">
+      <div className="flex items-center justify-between pb-10">
         <SectionHeader title="Frequently Asked Questions" />
+        <div className="flex items-center gap-5">
+          <p className="text-gray-500 text-sm">More Questions?</p>
+          <Button>Let's Connect</Button>
+        </div>
       </div>
-      <FaqAccordian questionList={tempQuestions} />
+      <div className="md:px-20">
+        <FaqAccordian questionList={tempQuestions} />
+      </div>
     </div>
   );
 };
