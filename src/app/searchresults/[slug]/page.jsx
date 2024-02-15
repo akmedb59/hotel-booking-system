@@ -6,6 +6,8 @@ import { FaCar } from "react-icons/fa";
 import { MdAirportShuttle } from "react-icons/md";
 import { MdAttractions } from "react-icons/md";
 import HotelFilter from "@/components/home/heroSection/hotelFilter";
+import Breadcrumb from "@/components/common/breadcrumb";
+import SearchPage from "@/components/searchResults/searchPage";
 
 const Page = () => {
   const sections = [
@@ -52,6 +54,14 @@ const Page = () => {
       <div className="py-2 pb-5 bg-[#eff6ff] mx-5 md:mx-10 lg:mx-36 rounded-2xl -translate-y-1/2">
         <div>
           <HotelFilter />
+        </div>
+      </div>
+      <div className="px-5 md:px-10 lg:px-36">
+        <div>
+          <Breadcrumb />
+        </div>
+        <div>
+          <SearchPage />
         </div>
       </div>
     </div>
