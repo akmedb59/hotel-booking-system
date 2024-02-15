@@ -8,6 +8,7 @@ import Footer from "@/components/common/footer/footer";
 import Faq from "@/components/home/faq/faq";
 import InstantDiscountCard from "@/components/home/discount/instantDiscountCard";
 import ClientReview from "@/components/home/clientReview/clientReview";
+import FeaturedDestinations from "@/components/home/featuredDestinations/featuredDestinations";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="pt-40 space-y-32">
         <TopHotelsSection />
         <FeatureSection />
+        <FeaturedDestinations />
         <StatsSection />
         <CountriesSection />
         <ClientReview />

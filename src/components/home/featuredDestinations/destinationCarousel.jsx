@@ -1,27 +1,20 @@
 "use client";
 import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import HotelCard from "./hotelCard";
-const HotelsCarousel = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5,
-      partialVisibilityGutter: 20, // this is needed to tell the amount of px that should be visible.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-    },
-  };
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  EffectFade,
+} from "swiper/modules";
+import HotelCard from "../topHotelsSection/hotelCard";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import DestinationCard from "./destinationCard";
 
+const DestinationCarousel = () => {
   const hotels = [
     {
       name: "Hotel 1 Ibezza Point Suites Hotel",
@@ -86,30 +79,36 @@ const HotelsCarousel = () => {
   ];
   return (
     <div>
-      {" "}
-      <Carousel
-        // draggable={false}
-        responsive={responsive}
-        // showDots={true}
-        // infinite={true}
-        partialVisible
-        // ssr={true}
-        itemClass="px-2"
-        // centerMode
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={4}
+        effect={"coverflow"}
+        centeredSlides={true}
+        grabCursor={true}
+        loop={false}
+        // slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 2,
+          stretch: 5,
+          depth: 100,
+          modifier: 5,
+          slideShadows: true,
+        }}
+        pagination={false}
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
       >
         {hotels.map((item, index) => (
-          <HotelCard
-            key={index}
-            name={item.name}
-            rating={item.rating}
-            price={item.price}
-            index={index}
-            img={item.img}
-          />
+          <SwiperSlide key={index}>
+            {({ isActive }) => (
+              <DestinationCard img={item.img} isActive={isActive} />
+            )}
+          </SwiperSlide>
         ))}
-      </Carousel>
+      </Swiper>
     </div>
   );
 };
 
-export default HotelsCarousel;
+export default DestinationCarousel;
