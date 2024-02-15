@@ -11,7 +11,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between px-5 md:px-10 lg:px-36 py-3 border-b shadow-sm">
+    <div className="flex items-center justify-between px-5 md:px-10 lg:px-36 py-3">
       <div>Logo</div>
       {showMenu ? (
         <div className="absolute inset-0 z-50 h-screen w-screen bg-white flex items-center justify-center md:hidden">

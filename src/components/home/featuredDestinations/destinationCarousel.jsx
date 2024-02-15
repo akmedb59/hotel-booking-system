@@ -5,7 +5,6 @@ import {
   EffectCoverflow,
   Pagination,
   Navigation,
-  EffectFade,
 } from "swiper/modules";
 import HotelCard from "../topHotelsSection/hotelCard";
 import "swiper/css";
