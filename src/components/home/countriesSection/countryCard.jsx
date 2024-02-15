@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const CountryCard = ({ name, img = "url('/heroBg.jpg')" }) => {
   return (
@@ -23,4 +23,4 @@ const CountryCard = ({ name, img = "url('/heroBg.jpg')" }) => {
   );
 };
 
-export default CountryCard
+export default CountryCard;
