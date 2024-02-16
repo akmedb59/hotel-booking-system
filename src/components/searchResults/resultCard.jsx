@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { FaThumbsUp } from "react-icons/fa";
@@ -9,6 +9,10 @@ const ResultCard = ({
   img = "url('/destinations (1).jpg')",
   rating = 8.5,
   star = 5,
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+  distance = 3.5,
+  city = "City",
+  reviews = 100,
 }) => {
   return (
     <div className="p-3 rounded-xl border overflow-hidden grid grid-cols-12 gap-3">
@@ -41,16 +45,14 @@ const ResultCard = ({
           </div>
         </div>
         <div className="flex gap-2 text-xs">
-          <div>Area</div>
-          <div>City</div>
-          <div>Show on Map</div>
-          <div>3.5 km from center</div>
+          {/* <div className="text-blue-800 cursor-pointer">{area}</div> */}
+          <div className="text-blue-800 cursor-pointer">{city}</div>
+          <Link href={"#"} className="text-blue-800 cursor-pointer">
+            Show on Map
+          </Link>
+          <div>{distance} km from center</div>
         </div>
-        <p className="text-xs">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco.
-        </p>
+        <p className="text-xs">{description}</p>
       </div>
       <div className="col-span-2">
         <div className="flex items-center gap-1 justify-between">
@@ -58,7 +60,7 @@ const ResultCard = ({
             <h4 className="font-semibold whitespace-nowrap text-base">
               Very Good
             </h4>
-            <p className="text-xs font-light text-right">100 reviews</p>
+            <p className="text-xs font-light text-right">{reviews} reviews</p>
           </div>
           <div className="bg-blue-900 text-white p-1 rounded-md">{rating}</div>
         </div>
