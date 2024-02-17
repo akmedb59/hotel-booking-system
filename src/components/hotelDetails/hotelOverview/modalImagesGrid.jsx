@@ -2,6 +2,7 @@ import React from "react";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import RatingCard from "./ratingCard";
+
 const ModalImagesGrid = ({ closeModal }) => {
   return (
     <div className="bg-white max-w-[90vw] h-[90vh] ">

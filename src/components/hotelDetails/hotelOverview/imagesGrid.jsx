@@ -31,7 +31,7 @@ const ImagesGrid = () => {
     },
   };
   return (
-    <div className="grid grid-rows-7 gap-2">
+    <div className="grid grid-rows-4 gap-2">
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -40,43 +40,43 @@ const ImagesGrid = () => {
         contentLabel="Example Modal"
       >
         {/* <button onClick={closeModal}>Close</button> */}
-        <ModalImagesGrid closeModal={closeModal}/>
+        <ModalImagesGrid closeModal={closeModal} />
       </Modal>
-      <div className="grid grid-cols-3 row-span-5 gap-2">
-        <div className="col-span-1 grid gap-2 grid-rows-2">
+      <div className="grid grid-cols-3 row-span-3 gap-2">
+        <div className="row-span-2 col-span-1 grid gap-2 grid-rows-2">
+          <Image
+            src="/hotel (8).jpg"
+            width={500}
+            height={200}
+            className="w-full h-full object-cover overflow-hidden"
+          />
           <Image
             src="/destinations (2).jpg"
             width={500}
             height={200}
-            className="h-full w-full object-cover"
-          />
-          <Image
-            src="/destinations (2).jpg"
-            width={500}
-            height={300}
-            className="h-full w-full object-cover"
+            className="w-full h-full object-cover overflow-hidden"
           />
         </div>
-        <div className="col-span-2 relative">
+        <div className="col-span-2 h-full relative">
           <Image
-            src="/destinations (2).jpg"
+            src="/hotel (2).jpg"
             width={500}
-            height={300}
-            className="h-full w-full object-cover"
+            height={500}
+            className="h-full w-full  object-cover overflow-hidden"
           />
           <div className="absolute top-2 right-2">
             <RatingCard />
           </div>
         </div>
       </div>
-      <div className="row-span-2 grid grid-cols-4 gap-2">
+      <div className="row-span-1 grid grid-cols-4 gap-2">
         {Array.from({ length: 3 }, (_, i) => (
           <Image
             key={i}
             src="/hotel (2).jpg"
             width={500}
             height={500}
-            className="h-full w-full object-cover"
+            className="aspect-video w-full object-cover"
           />
         ))}
         <div
