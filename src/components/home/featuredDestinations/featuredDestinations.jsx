@@ -5,7 +5,7 @@ import DestinationCarousel from "./destinationCarousel";
 const FeaturedDestinations = () => {
   return (
     <div className="min-h-screen relative">
-      <div className="bg-[#eff6ff] w-2/3 absolute left-0 -top-40 h-full rounded-r-3xl p-5 md:p-10 lg:pl-36">
+      <div className="bg-[#eff6ff] w-full md:w-2/3 md:absolute left-0 md:-top-40 h-full rounded-r-3xl p-5 md:p-10 lg:pl-36">
         <div className="flex justify-between  flex-col h-full">
           <div>
             <SectionHeader title="Featured Destinations" />

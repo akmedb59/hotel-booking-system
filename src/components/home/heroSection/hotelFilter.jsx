@@ -6,7 +6,7 @@ import Button from "../../common/button";
 
 const HotelFilter = () => {
   return (
-    <div className="grid grid-cols-12 items-end gap-2 px-20">
+    <div className="grid  lg:grid-cols-12 items-end gap-2 px-5 md:px-10 lg:px-20">
       <div className="col-span-4">
         <label htmlFor="hotelSelection" className="text-xs">
           Destination

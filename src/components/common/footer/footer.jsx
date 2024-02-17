@@ -59,7 +59,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#eff6ff]  py-10 w-full pt-60">
       <div className="2xl:max-w-[1400px] mx-auto px-5 md:px-10 lg:px-20">
-        <div className="md:grid grid-cols-9 w-full gap-10">
+        <div className="grid md:grid-cols-9 w-full gap-5 lg:gap-10">
           <div className="col-span-3 flex flex-col items-start space-y-5 w-full">
             <div className="text-xl font-extrabold text-orange-500">Logo</div>
             <div className="text-sm text-gray-600">
@@ -108,7 +108,7 @@ const Footer = () => {
         <div>
           <hr className="my-5 border" />
         </div>
-        <div className="flex justify-between text-xs text-gray-600">
+        <div className="md:flex justify-between text-xs text-gray-600">
           <div className="flex gap-1 items-center">
             Copyright
             <FaRegCopyright />

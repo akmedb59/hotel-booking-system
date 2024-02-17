@@ -66,7 +66,7 @@ const Faq = () => {
     <div className="px-5 md:px-10 lg:px-20">
       <div className="flex items-center justify-between pb-10">
         <SectionHeader title="Frequently Asked Questions" />
-        <div className="flex items-center gap-5">
+        <div className="flex flex-col md:flex-row items-center gap-5">
           <p className="text-gray-500 text-sm">More Questions?</p>
           <Button>Let's Connect</Button>
         </div>

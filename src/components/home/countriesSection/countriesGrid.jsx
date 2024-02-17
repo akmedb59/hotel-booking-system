@@ -3,7 +3,7 @@ import CountryCard from "./countryCard";
 
 const CountriesGrid = () => {
   return (
-    <div className="grid grid-cols-2 gap-5 py-5">
+    <div className="grid md:grid-cols-2 gap-5 py-5">
       <div>
         <CountryCard name={"Indonesia"} img="url('/country (1).jpg')" />
       </div>

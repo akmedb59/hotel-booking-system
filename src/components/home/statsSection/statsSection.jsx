@@ -6,7 +6,7 @@ import ButtonLight from "@/components/common/buttonLight";
 import StatsSecImg from "./statsSecImg";
 const StatsSection = () => {
   return (
-    <div className="grid grid-cols-2 gap-10 px-5 md:px-10 lg:px-36">
+    <div className="grid md:grid-cols-2 gap-10 px-5 md:px-10 lg:px-36">
       <div>
         <StatsSecImg />
       </div>
